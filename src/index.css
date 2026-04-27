@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  /* TYPOGRAPHY */
+
+  --font-family-base: "Outfit", sans-serif;
+
+  --font-size-xs: 11px;
+  --font-size-sm: 12px;
+  --font-size-base: 13px;
+  --font-size-md: 14px;
+  --font-size-lg: 16px;
+  --font-size-xl: 18px;
+  --font-size-2xl: 20px;
+  --font-size-3xl: 24px;
+  --font-size-4xl: 28px;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+
+  --line-height-tight: 1.2;
+  --line-height-snug: 1.4;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.65;
+  --line-height-loose: 1.7;
+
+  /* COLOR — TEAL */
+
+  --color-teal-50: #eaf5f2;
+  --color-teal-100: #c0e5de;
+  --color-teal-500: #1a9e8a;
+  --color-teal-600: #0c7a6a;
+  --color-teal-700: #0a6358;
+
+  /* COLOR — GRAY */
+
+  --color-gray-0: #ffffff;
+  --color-gray-50: #f7f7f5;
+  --color-gray-100: #f0f0ec;
+  --color-gray-200: #e2e2de;
+  --color-gray-300: #d0d0c8;
+  --color-gray-400: #a0a098;
+  --color-gray-500: #9a9a90;
+  --color-gray-600: #6a6a60;
+  --color-gray-700: #3a3a30;
+  --color-gray-800: #1a1a18;
+
+  /* COLOR — ACCENT and STATUS */
+
+  --color-amber-50: #fef9ec;
+  --color-amber-400: #f59e0b;
+  --color-amber-600: #c07820;
+
+  --color-red-500: #c0392b;
+  --color-red-600: #a93226;
+
+  --color-green-500: #22c55e;
+
+  /* SPACING */
+
+  --space-1: 2px;
+  --space-2: 4px;
+  --space-3: 8px;
+  --space-4: 12px;
+  --space-5: 16px;
+  --space-6: 20px;
+  --space-7: 24px;
+  --space-8: 32px;
+  --space-9: 48px;
+  --space-10: 64px;
+
+  /* BORDER RADIUS */
+
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 10px;
+  --radius-2xl: 12px;
+  --radius-3xl: 14px;
+
+  /* BORDER WIDTH */
+
+  --border-width-xs: 0.5px;
+  --border-width-sm: 1px;
+  --border-width-md: 1.5px;
+
+  /****************************************
+  Semantic tokens
+  ****************************************/
+
+  /* BACKGROUND */
+
+  --color-bg-page: var(--color-gray-50);
+  --color-bg-surface: var(--color-gray-0);
+  --color-bg-subtle: var(--color-gray-100);
+  --color-bg-brand-subtle: var(--color-teal-50);
+  --color-bg-brand-bold: var(--color-teal-600);
+
+  /* BRAND COLORS */
+  --color-text-primary: var(--color-gray-800);
+  --color-text-secondary: var(--color-gray-600);
+  --color-text-tertiary: var(--color-gray-500);
+  --color-text-hint: var(--color-gray-400);
+  --color-text-brand: var(--color-teal-600);
+  --color-text-on-brand: var(--color-gray-0);
+  --color-text-danger: var(--color-red-500);
+  --color-text-decorative: var(--color-amber-400);
+
+  /* BORDER */
+
+  --color-border-default: var(--color-gray-200);
+  --color-border-strong: var(--color-gray-400);
+  --color-border-brand: var(--color-teal-100);
+  --color-border-brand-strong: var(--color-teal-600);
+
+  /* ACTION — buttons, links, chips */
+
+  /* Primary button */
+  --color-action-primary-bg: var(--color-teal-600);
+  --color-action-primary-text: var(--color-gray-0);
+  --color-action-primary-border: var(--color-teal-600);
+
+  /* Primary button hover */
+  --color-action-primary-bg-hover: var(--color-teal-700);
+
+  /* Secondary button */
+  --color-action-secondary-bg: var(--color-gray-0);
+  --color-action-secondary-text: var(--color-teal-600);
+  --color-action-secondary-border: var(--color-teal-600);
+
+  /* Danger button — white bg, red border, red text */
+  --color-action-danger-bg: var(--color-gray-0);
+  --color-action-danger-text: var(--color-red-500);
+  --color-action-danger-border: var(--color-red-500);
+
+  /* Confirmed booking */
+  --color-status-confirmed-bg: var(--color-teal-50);
+  --color-status-confirmed-text: var(--color-teal-600);
+  --color-status-confirmed-border: var(--color-teal-100);
+
+  /* Pending booking */
+  --color-status-pending-bg: var(--color-amber-50);
+  --color-status-pending-text: var(--color-amber-600);
+  --color-status-pending-border: var(--color-amber-50);
+
+  /* Sitter availability dot */
+  --color-status-available: var(--color-green-500);
+
+  /* Star ratings */
+  --color-status-rating: var(--color-amber-400);
+
+  /* Spacing */
+  --space-xs: var(--space-2);
+  --space-sm: var(--space-3);
+  --space-md: var(--space-5);
+  --space-lg: var(--space-7);
+  --space-xl: var(--space-8);
+  --space-2xl: var(--space-9);
+
+  /* BORDER RADIUS */
+  --radius-input: var(--radius-lg);
+  --radius-card: var(--radius-3xl);
+  --radius-badge: var(--radius-md);
+  --radius-pill: 100px;
+
+  /* Border Width */
+  --border-default: var(--border-width-xs);
+  --border-button: var(--border-width-sm);
+  --border-avatar: var(--border-width-md);
+
+  /* Semantic Typography */
+
+  /* Section labels */
+  --text-label-size: var(--font-size-xs);
+  --text-label-weight: var(--font-weight-semibold);
+
+  /* Helper text, timestamps, metadata */
+  --text-caption-size: var(--font-size-sm);
+  --text-caption-weight: var(--font-weight-regular);
+
+  /* Secondary body: sitter location, review text */
+  --text-body-sm-size: var(--font-size-base);
+  --text-body-sm-weight: var(--font-weight-regular);
+
+  /* Primary body: bios, notes, descriptions */
+  --text-body-size: var(--font-size-md);
+  --text-body-weight: var(--font-weight-regular);
+
+  /* Card titles, sitter names */
+  --text-title-size: var(--font-size-md);
+  --text-title-weight: var(--font-weight-semibold);
+
+  /* Small headings: "Sitters near you" */
+  --text-heading-sm-size: var(--font-size-xl);
+  --text-heading-sm-weight: var(--font-weight-semibold);
+
+  /* Medium headings: dashboard greeting */
+  --text-heading-md-size: var(--font-size-2xl);
+  --text-heading-md-weight: var(--font-weight-semibold);
+
+  /* Large headings: "Request sent!" */
+  --text-heading-lg-size: var(--font-size-3xl);
+  --text-heading-lg-weight: var(--font-weight-semibold);
+
+  /* Hero heading */
+  --text-heading-xl-size: var(--font-size-4xl);
+  --text-heading-xl-weight: var(--font-weight-semibold);
+}
+
+/* BASE STYLES */
+
+body {
+  font-family: var(--font-family-base);
+}
